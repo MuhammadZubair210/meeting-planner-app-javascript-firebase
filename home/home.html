@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDg7BkCfGAMZCuXyaMyuGcRTQzVP1sb370",
+            authDomain: "event-planner-6278e.firebaseapp.com",
+            databaseURL: "https://event-planner-6278e.firebaseio.com",
+            projectId: "event-planner-6278e",
+            storageBucket: "event-planner-6278e.appspot.com",
+            messagingSenderId: "465997437449"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+
+
+<body>
+    <div class="header">
+        <strong> Meeting Planer System</strong>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent aaa" onclick="logout()">
+LogOut</button>
+        <br>
+        <br>
+
+        <!-- <div id="nav"> -->
+        <a href="../allevents/allevents.html">All events</a>
+        <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent aaa"> -->
+        <a href="../myevents/myevents.html">My Interested</a>
+
+        <!-- </div> -->
+
+
+    </div>
+    <div class="main">
+
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+            <h1>Plan An Event</h1>
+
+            <div class="mdl-card__supporting-text">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="organization">
+                    <label class="mdl-textfield__label" for="sample3">Organization</label>
+                </div>
+            </div>
+            <div class="mdl-card__supporting-text">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" rows="50" col="100" type="text" id="event">
+                    <label class="mdl-textfield__label" for="sample3">Add your Event</label>
+                </div>
+
+                <div class="mdl-card__supporting-text">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="date" id="date">
+                        <!-- <label class="mdl-textfield__label" for="sample3">Enter Date</label> -->
+                    </div>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="submit()">
+          Submit Event
+                </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="organization">
+                <label class="mdl-textfield__label" for="sample3">Organization</label>
+            </div>
+            <br>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" rows="50" col="100" type="text" id="event">
+                <label class="mdl-textfield__label" for="sample3">Add your Event</label>
+            </div>
+
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="submit()">
+  Submit Event
+</button> -->
+
+
+
+
+
+
+
+
+
+
+
+    <script src="home.js">
+
+    </script>
+
+    <style>
+        /* .nav{
+            margin:0px 0px 0px 80px;
+        } */
+
+        .header {
+            width: 100%;
+            height: 70px;
+            background-color: mediumturquoise;
+            color: white;
+            margin: 0.1%;
+            font-size: 30px;
+        }
+
+        #main {
+            font-size: 30px;
+            margin: 20px 0px 0px 0px;
+        }
+
+        .demo-card-wide {
+            width: 512px;
+            margin: 2% 5% 5% 33%;
+        }
+
+        .aaa {
+            float: right;
+            margin: 1%
+        }
+    </style>
+
+</body>
+
+</html>
